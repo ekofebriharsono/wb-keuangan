@@ -1,14 +1,14 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.php"><img src="assets/images/wb/logo_wb_productions.png" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="assets/images/wb/logo_wb_bundar.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="index.php"><img src="../../assets/images/wb/logo_wb_productions.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="../../assets/images/wb/logo_wb_bundar.png" alt="logo" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="assets/images/wb/logo_wb.png" alt="">
+                  <img class="img-xs rounded-circle " src="../../assets/images/wb/logo_wb.png" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
@@ -46,7 +46,7 @@
             <span class="nav-link">Navigation</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="../dashboard/dashboard.php">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
@@ -63,9 +63,9 @@
             </a>
             <div class="collapse" id="auth1">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Data Karyawan </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Data Pemasukan </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Data Pengeluaran </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../input_data/data_karyawan.php"> Data Karyawan </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../input_data/data_pemasukan.php"> Data Pemasukan </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../input_data/data_pengeluaran.php"> Data Pengeluaran </a></li>
               </ul>
             </div>
           </li>
@@ -79,9 +79,9 @@
             </a>
             <div class="collapse" id="auth2">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Data Karyawan </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Data Pemasukan </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Data Pengeluaran </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../data/data_karyawan.php"> Data Karyawan </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../data/data_pemasukan.php"> Data Pemasukan </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../data/data_pengeluaran.php"> Data Pengeluaran </a></li>
               </ul>
             </div>
           </li>
