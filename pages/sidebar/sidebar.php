@@ -63,9 +63,9 @@
             </a>
             <div class="collapse" id="auth1">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../input_data/data_karyawan.php"> Data Karyawan </a></li>
-                <li class="nav-item"> <a class="nav-link" href="../input_data/data_pemasukan.php"> Data Pemasukan </a></li>
-                <li class="nav-item"> <a class="nav-link" href="../input_data/data_pengeluaran.php"> Data Pengeluaran </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../input_data/input_karyawan.php"> Data Karyawan </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../input_data/input_pemasukan.php"> Data Pemasukan </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../input_data/input_pengeluaran.php"> Data Pengeluaran </a></li>
               </ul>
             </div>
           </li>
@@ -85,5 +85,7 @@
               </ul>
             </div>
           </li>
+
+
         </ul>
       </nav>
