@@ -15,7 +15,7 @@
             </ul>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item">
-                <a class="nav-link"  href="login.php">
+                <a class="nav-link"  href="../login/login.php">
                   <div class="navbar-profile">
                     <div class="preview-thumbnail">
                       <div class="preview-icon">
