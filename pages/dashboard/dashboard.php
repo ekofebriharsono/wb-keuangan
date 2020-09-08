@@ -41,9 +41,10 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">Rp.</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <h3 class="mb-0">Rp 10.000.000</h3>
                         </div>
+                        <br>
+                        <p class="text-primary mb-0 font-weight-medium">+60%</p>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                         <i class="icon-lg mdi mdi-emoticon-happy text-primary ml-auto"></i>
@@ -59,9 +60,10 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">Rp.</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
+                          <h3 class="mb-0">Rp 4.500.000</h3>
                         </div>
+                        <br>
+                        <p class="text-danger mb-0 font-weight-medium">-40%</p>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                         <i class="icon-lg mdi mdi-emoticon-sad text-danger ml-auto"></i>
@@ -77,9 +79,10 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">Rp.</h2>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                          <h3 class="mb-0">Rp. 6.500.000</h3>
                         </div>
+                        <br>
+                        <p class="text-success mb-0 font-weight-medium">100% </p>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                         <i class="icon-lg mdi mdi-emoticon-cool text-success ml-auto"></i>
@@ -97,8 +100,8 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">Rp.</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <h3 class="mb-0">Rp 6.300.000</h3>
+                          <p class="text-primary ml-2 mb-0 font-weight-medium">+60%</p>
                         </div>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
@@ -115,14 +118,50 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">Rp.</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
+                          <h3 class="mb-0">Rp. 4.000.000</h3>
+                          <p class="text-danger ml-2 mb-0 font-weight-medium">-40%</p>
                         </div>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                         <i class="icon-lg mdi mdi-check text-danger ml-auto"></i>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Line chart</h4>
+                    <canvas id="lineChart" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Bar chart</h4>
+                    <canvas id="barChart" style="height:230px"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Area chart</h4>
+                    <canvas id="areaChart" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Doughnut chart</h4>
+                    <canvas id="doughnutChart" style="height:250px"></canvas>
                   </div>
                 </div>
               </div>
@@ -162,5 +201,6 @@
     <!-- Custom js for this page -->
     <script src="../../assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
+    <script src="../../assets/js/chart.js"></script>
   </body>
 </html>
