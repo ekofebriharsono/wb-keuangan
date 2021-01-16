@@ -21067,7 +21067,7 @@ div.tagsinput {
 
 .container-scroller {
   display: flex;
-  position: relative; }
+  position: relative; } 
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
