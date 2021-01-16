@@ -1,5 +1,7 @@
-<?php  include '../../php/koneksi.php';   ?>
-<!DOCTYPE html>
+
+<?php if(isset($_POST['id'])){ ?>
+
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -35,62 +37,44 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-
-            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <center><h4 class="card-title">Data Karyawan</h4>
-                    <p class="card-description">Login Akses</p></center>
-                    <div class="table-responsive">
-                      <?php 
-                        $conn = OpenCon();
-                        $sql = "SELECT * FROM `karyawan`";
-                        $res = mysqli_query($conn, $sql);
-                        if(!$res){
-                          echo "Gagal disimpan!";
-                        }
-                      ?>
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th> Id </th>
-                            <th> Nama </th>
-                            <th> Email </th>
-                            <th> Password </th>
-                            <th> Aksi </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <?php while($row = mysqli_fetch_array($res)){ ?>
-                            <tr>
-                              <td><?php echo $row['id_karyawan']; ?></td>
-                              <td><?php echo $row['nama']; ?></td>
-                              <td><?php echo $row['email']; ?></td>
-                              <td><?php echo $row['password']; ?></td>
-                              <td>
-                                <form class="forms-sample" action="../../php/input-data/karyawan.php" method="POST">
-                                  <input type="text" class="form-control" name="id" placeholder="Nama" hidden value="<?php echo $row['id_karyawan']; ?>"> 
-                                  <input type="text" class="form-control" name="nama" placeholder="Nama" hidden <?php echo $row['nama']; ?>>
-                                  <input type="email" class="form-control" name="email" placeholder="Email WB" hidden <?php echo $row['email']; ?>>
-                                  <input type="password" class="form-control" name="password" placeholder="Password" hidden <?php echo $row['password']; ?>>
-                                  <button class="badge badge-danger" name="submitKaryawanDelete">Delete</button>
-                                </form>
-                                <form class="forms-sample" action="../update-data/update_karyawan.php" method="POST">
-                                  <input type="text" class="form-control" name="id" placeholder="Nama" hidden value="<?php echo $row['id_karyawan']; ?>"> 
-                                  <input type="text" class="form-control" name="nama" placeholder="Nama" hidden value="<?php echo $row['nama']; ?>">
-                                  <input type="email" class="form-control" name="email" placeholder="Email WB" hidden value="<?php echo $row['email']; ?>">
-                                  <input type="password" class="form-control" name="password" placeholder="Password" hidden value="<?php echo $row['password']; ?>">
-                                  <button class="badge badge-warning" name="submitKaryawanUpdate">Update</button>
-                                </form>
-                              </td>
-                            </tr>
-                          <?php } ?>
-                        </tbody>
-                      </table>
-                    </div>
+                    <center><h4 class="card-title">Update Karawan</h4>
+                    <p class="card-description"> Akses Login </p></center>
+                   
+
+
+                    <form class="forms-sample" action="../../php/input-data/karyawan.php" method="POST">
+                     
+                     <div class="form-group">
+                         <label>Id</label>
+                         <input type="text" class="form-control" name="id" placeholder="Id" value="<?php echo $_POST['id']; ?> ">
+                       </div>
+                       <div class="form-group">
+                         <label>Nama</label>
+                         <input type="text" class="form-control" name="nama" placeholder="Nama" value="<?php echo $_POST['nama']; ?> ">
+                       </div>
+                       <div class="form-group">
+                         <label>Email address</label>
+                         <input type="email" class="form-control" name="email" placeholder="Email WB" value="<?php echo $_POST['email']; ?> ">
+                       </div>
+                       <div class="form-group">
+                         <label>Password</label>
+                         <input type="password" class="form-control" name="password" placeholder="Password" value="<?php echo $_POST['password']; ?> ">
+                       </div>
+                       <button type="submit" class="btn btn-primary mr-2" name="submitKaryawanUpdate">Update</button>
+                       <button type="submit"  name="submitKaryawanCancel" class="btn btn-dark">Cancel</button>
+                     </form>
+
+
                   </div>
                 </div>
               </div>
+              
+
+
+
             </div>
           </div>
           <!-- content-wrapper ends -->
@@ -129,3 +113,5 @@
     <!-- End custom js for this page -->
   </body>
 </html>
+
+<?php } else { echo "gagal"; } ?>
